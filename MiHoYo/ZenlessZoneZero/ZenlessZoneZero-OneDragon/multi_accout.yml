@@ -1,0 +1,4 @@
+multi_account:
+  enable: true 
+  switch_interval_min: 1  # 任务完成后等待时间（分钟）
+  instance_order: [1, 2]  # 切换顺序 
