@@ -26,8 +26,8 @@ ping 127.0.0.1 -n 5 >nul
 
 
 :: 等待上诉应用程序结束，再预定bgi
-start "" /wait "D:\Game\BetterGI\BetterGI\BetterGI.exe" startOneDragon "<默认配置>"
+start "" /wait "D:\Game\BetterGI\BetterGI\BetterGI.exe" startOneDragon "默认配置"
 
 
-:: 10分钟后关机
-shutdown.exe /s /t 600
+:: 10分钟后关机(可选择关机)
+:: shutdown.exe /s /t 600

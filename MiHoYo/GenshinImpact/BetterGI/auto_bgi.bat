@@ -16,4 +16,4 @@ if %errorlevel% neq 0 (
 )
 
 
-start "" /wait "D:\Game\BetterGI\BetterGI\BetterGI.exe" startOneDragon "<默认配置>"
+start "" /wait "D:\Game\BetterGI\BetterGI\BetterGI.exe" startOneDragon "默认配置"
