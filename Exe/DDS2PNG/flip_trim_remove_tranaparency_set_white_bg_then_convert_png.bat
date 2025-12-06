@@ -15,25 +15,26 @@ setlocal enabledelayedexpansion
 
 :: 输出目录
 :: 当前目录下的file
-set OUTDIR=file
+set OUTDIR=WhiteBG
 :: 设置magick的路径
 set m="D:\SoftwarePro\ImageMagick\ImageMagick-7.1.2-Q16-HDRI\magick.exe"
 
 
 if not exist "%OUTDIR%" mkdir "%OUTDIR%"
 
-echo ==========================================
-echo   DDS 垂直翻转 + 转为 PNG（ImageMagick）
-echo ==========================================
+echo =====================================================
+echo   DDS垂直翻转 + 设置白色背景 + 去除背景边缘 + 转为 PNG
+echo =====================================================
 echo.
 
 for %%f in (*.dds) do (
     echo [处理中] %%f
-    %m% "%%f" -flip "%OUTDIR%\%%~nf.png"
+    %m% "%%f" -flip -background white -alpha remove -trim "%OUTDIR%\%%~nf.png"
 )
 
-echo ==========================================
+echo =====================================================
 echo   完成！已翻转并转换为PNG
 echo   输出目录：%OUTDIR%
-echo ==========================================
+echo =====================================================
 pause
+
