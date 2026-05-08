@@ -1,0 +1,2 @@
+1. Clone the file  \Star Rail\Game\StarRail_Data\webCaches\2.49.0.0\Cache\Cache_Data\data_2 into anothoer place.
+2. Ctr + F  Find "webstatic.mihoyo"
